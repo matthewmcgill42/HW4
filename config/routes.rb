@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources "places"
   resources "sessions"
   resources "users"
+  delete("/logout", { :controller => "sessions", :action => "destroy" })
 end
